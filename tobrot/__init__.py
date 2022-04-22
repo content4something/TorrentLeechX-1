@@ -55,11 +55,11 @@ for imp in ["TG_BOT_TOKEN", "APP_ID", "API_HASH", "OWNER_ID", "AUTH_CHANNEL"]:
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 APP_ID = int(os.environ.get("APP_ID", 12345))
 API_HASH = os.environ.get("API_HASH")
-OWNER_ID = int(os.environ.get("OWNER_ID", 539295917))
+OWNER_ID = int(os.environ.get("OWNER_ID", 1428968542))
 
 # Get these values from my.telegram.org
 # to store the channel ID who are authorized to use the bot
-AUTH_CHANNEL = [int(x) for x in os.environ.get("AUTH_CHANNEL", "539295917").split()]
+AUTH_CHANNEL = [int(x) for x in os.environ.get("AUTH_CHANNEL", "1428968542").split()]
 
 # Cuz most ppl dunno AUTH_CHANNEL also works as SUDO
 SUDO_USERS = [int(sudos) if (' ' not in os.environ.get('SUDO_USERS', '')) else int(sudos) for sudos in os.environ.get('SUDO_USERS', '').split()]
