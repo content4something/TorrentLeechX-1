@@ -14,12 +14,13 @@ async def new_join_f(client, message):
     chat_type = message.chat.type
     if chat_type != "private":
         await message.reply_text(
-            f"""<b>🙋🏻‍♂️ Hello dear!\n\n This Is A Leech Bot .This Chat Is Not Supposed To Use Me</b>\n\n<b>Current CHAT ID: <code>{message.chat.id}</code>""",
+            f"""<i>🙋🏻‍♂️ Hello Friend!\n\nWelcome to Leech Cloud. Updates of this group will be provided <b>@Leech_Cloud</b>.\nThis Group is associated with <b>@HeimanSupports</b>.</i>""",
             parse_mode="html",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton('Github', url='https://github.com/AmirulAndalib')
+                        InlineKeyboardButton('Main Channel', url='https://t.me/HeimanSupports'),
+                        InlineKeyboardButton('Update Channel', url='https://t.me/Leech_Cloud')
                     ]
                 ]
                )
